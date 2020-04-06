@@ -30,6 +30,7 @@ CARAVAN memo
        catgory:string
        body:text
 ・controller
+ blogs
 ・view
  topページ(CARAVANページ)
  blog投稿フォーム
