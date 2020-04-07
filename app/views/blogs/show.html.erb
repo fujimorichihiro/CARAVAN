@@ -31,30 +31,37 @@
       </p>
     </div>
   </div>
- 
   <main class="clearfix">
-    <section class="blog">
+    <section class="single-blog">
       <h2 class="blog-headline">Blog</h2>
-      <div class="blog-box">
-        <p><%= @blog.title %></p>
-        <div class="box1">
-           <span class="category"><%= @blog.category %></span> <!-- カテゴリー―部分 -->
-           <p><%= @blog.created_at %></p> <!-- 日付部分 -->
+      <section class="blog-box">
+        <h3 class="blog-box-headline">
+          <%= @blog.title %>
+        </h3>
+        <div class="blog-box-content">
+          <p class="category">
+            <%= @blog.category %>
+          </p>
+          <p class="blog-date">
+            <%= @blog.created_at %>
+          </p>
         </div>
-        <div class="blog-image"><%= image_tag('img/desert.jpg', class: 'blog-image') %></div>
-        <p><%= @blog.body %></p>
-       
-        <div class="box2">
-      </div>
-      <div class="pagination">
-        <p><<</p>
-        <p><</p>
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
-        <p>></p>
-        <p>>></p>
-      </div>
+        <%= image_tag "img/forest.jpg", class:"single-image" %>
+        <p class="single-text">
+          <%= @blog.body %>
+        </p>
+        <a href="#">編集</a>
+        <a href="#">削除</a>
+        <div class="author-case clearfix">
+          <div class="author-image"></div>
+          <div class="author-box">
+            <p class="author-name">By JOHN SMITH / Photographer</p>
+            <p class="author-text">His black and white landscapes, often captured at times<br>
+            of the day and night when the light is fleeting, or in poor<br>
+            weather conditions, such as rain, fog, or snow, are<br>reminiscent of the calm in a storm all with an ethereal<br>quality. </p>
+          </div>
+        </div>
+      </section>
     </section>
     <div class="sidebar">
       <section class="popular">
