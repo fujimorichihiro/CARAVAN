@@ -1,3 +1,4 @@
+<!-- 詳細ぺ―ジ -->
 <header>
     <h1 class="headline">
       <a href="#">CARAVAN</a>
@@ -50,7 +51,7 @@
         <p class="single-text">
           <%= @blog.body %>
         </p>
-        <a href="#">編集</a>
+        <%= link_to "編集", edit_blog_path(@blog) %>
         <a href="#">削除</a>
         <div class="author-case clearfix">
           <div class="author-image"></div>

@@ -1,8 +1,12 @@
 <h1>投稿ページ</h1>
 
-<%= form_for(blog.id) %>
-  <h3>タイトル</h3>
-  <h3>カテゴリー</h3>
-  <h3>本文</h3>
-  <h3>画像</h3>
-<end>
+<%= form_for(@blog) do |f| %>
+  <h4>タイトル</h4>
+  <%= f.text_field :title %>
+  <h4>カテゴリー</h4>
+  <%= f.text_field :category %>
+  <h4>本文</h4>
+  <%= f.text_area :body %>
+  <h4>画像</h4>
+  <%= f.submit '保存' %>
+<% end %>
