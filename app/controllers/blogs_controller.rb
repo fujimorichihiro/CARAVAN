@@ -17,9 +17,15 @@ class BlogsController < ApplicationController
   	blog.save
   	redirect_to blogs_path(blog.id) #投稿後、詳細ページへ遷移
   end
-
-
+  
   def edit
+    @blog = Blog.find(params[:id])
+  end
+
+  def update
+    blog = Blog.find(params[:id])
+    blog.update
+    redirect_to blogs_path(blog.id)
   end
  # -----------------------------------
  private
