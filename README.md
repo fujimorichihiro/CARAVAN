@@ -37,3 +37,5 @@ CARAVAN memo
  blog詳細ページ（（タイトル,categoroy,本文）データの取得、詳細の表示、編集、削除ボタン→リダイレクトtopページ）
 ・rooting
  get 詳細ページ、ブログ記事情報の取得(title,category,body)
+
+ finished
